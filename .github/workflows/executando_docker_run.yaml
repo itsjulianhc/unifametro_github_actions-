@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Realiza a execução do docker
         run: |
-            docker run docker/whalesay cowsay <Julian>
-            echo "Imagem criada!"
+             docker run docker/whalesay cowsay <Julian>
+            echo Teste
