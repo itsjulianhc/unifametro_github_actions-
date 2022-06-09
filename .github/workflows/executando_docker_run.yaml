@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Realiza a execução do docker
+        run: |
+            docker run docker/whalesay cowsay <Julian>
+            echo "Imagem criada!"
